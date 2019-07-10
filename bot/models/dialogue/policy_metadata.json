@@ -1,0 +1,62 @@
+{
+  "action_fingerprints": {
+    "action_listen": {
+      "slots": []
+    },
+    "action_test": {
+      "slots": []
+    },
+    "utter_contato": {
+      "slots": []
+    },
+    "utter_cumprimentar": {
+      "slots": []
+    },
+    "utter_comprar": {
+      "slots": []
+    },
+    "utter_imovel_de_entrada": {
+      "slots": []
+    },
+    "utter_bairro": {
+      "slots": []
+    },
+    "utter_despedir": {
+      "slots": []
+    },
+    "utter_tudo_bem": {
+      "slots": []
+    },
+    "utter_risada": {
+      "slots": []
+    },
+    "utter_tipo_imovel": {
+      "slots": []
+    },
+    "utter_valor_imovel_entrada": {
+      "slots": []
+    },
+    "utter_default": {
+      "slots": []
+    },
+    "utter_diga_mais": {
+      "slots": []
+    }
+  },
+  "python": "3.6.9",
+  "max_histories": [
+    null,
+    null,
+    2
+  ],
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
+  "policy_names": [
+    "rasa_core.policies.keras_policy.KerasPolicy",
+    "rasa_core.policies.fallback.FallbackPolicy",
+    "rasa_core.policies.memoization.MemoizationPolicy"
+  ],
+  "trained_at": "20190710-194544",
+  "rasa_core": "0.13.1",
+  "tensorflow": "1.12.3",
+  "sklearn": "0.20.3"
+}

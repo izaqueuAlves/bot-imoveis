@@ -1,0 +1,525 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "action_test",
+        "text": "test custom action"
+      },
+      {
+        "intent": "action_test",
+        "text": "custom action"
+      },
+      {
+        "intent": "action_test",
+        "text": "actions"
+      },
+      {
+        "intent": "action_test",
+        "text": "custom actions"
+      },
+      {
+        "intent": "action_test",
+        "text": "action"
+      },
+      {
+        "intent": "action_test",
+        "text": "test action"
+      },
+      {
+        "intent": "out_of_scope",
+        "text": "Você fala sobre o meio ambiente?"
+      },
+      {
+        "intent": "out_of_scope",
+        "text": "Qual a origem do mundo?"
+      },
+      {
+        "intent": "out_of_scope",
+        "text": "Você tem signo?"
+      },
+      {
+        "intent": "out_of_scope",
+        "text": "Vc gosta de carnaval?"
+      },
+      {
+        "intent": "out_of_scope",
+        "text": "batatinha quando nasce"
+      },
+      {
+        "intent": "despedir",
+        "text": "Tchau obrigado"
+      },
+      {
+        "intent": "despedir",
+        "text": "Tchau"
+      },
+      {
+        "intent": "despedir",
+        "text": "até logo"
+      },
+      {
+        "intent": "despedir",
+        "text": "até mais"
+      },
+      {
+        "intent": "despedir",
+        "text": "até breve"
+      },
+      {
+        "intent": "despedir",
+        "text": "falou, valeu"
+      },
+      {
+        "intent": "despedir",
+        "text": "flw vlw"
+      },
+      {
+        "intent": "despedir",
+        "text": "xau"
+      },
+      {
+        "intent": "cumprimentar",
+        "text": "oi tudo bem"
+      },
+      {
+        "intent": "cumprimentar",
+        "text": "oi como vai voce"
+      },
+      {
+        "intent": "cumprimentar",
+        "text": "como vao as coisas"
+      },
+      {
+        "intent": "cumprimentar",
+        "text": "com licenca"
+      },
+      {
+        "intent": "cumprimentar",
+        "text": "posso falar com voce"
+      },
+      {
+        "intent": "cumprimentar",
+        "text": "pode me tirar uma duvida"
+      },
+      {
+        "intent": "cumprimentar",
+        "text": "gostaria de tirar uma duvida"
+      },
+      {
+        "intent": "cumprimentar",
+        "text": "bom dia"
+      },
+      {
+        "intent": "cumprimentar",
+        "text": "boa tarde"
+      },
+      {
+        "intent": "cumprimentar",
+        "text": "boa noite"
+      },
+      {
+        "intent": "cumprimentar",
+        "text": "olá"
+      },
+      {
+        "intent": "cumprimentar",
+        "text": "oie"
+      },
+      {
+        "intent": "cumprimentar",
+        "text": "oi"
+      },
+      {
+        "intent": "cumprimentar",
+        "text": "ola"
+      },
+      {
+        "intent": "cumprimentar",
+        "text": "opa tudo bem"
+      },
+      {
+        "intent": "cumprimentar",
+        "text": "ola boa tarde"
+      },
+      {
+        "intent": "diga_mais",
+        "text": "como funciona"
+      },
+      {
+        "intent": "diga_mais",
+        "text": "me diga mais"
+      },
+      {
+        "intent": "diga_mais",
+        "text": "não entendi"
+      },
+      {
+        "intent": "diga_mais",
+        "text": "nao entendi"
+      },
+      {
+        "intent": "diga_mais",
+        "text": "não é isso"
+      },
+      {
+        "intent": "diga_mais",
+        "text": "nao eh isso"
+      },
+      {
+        "intent": "diga_mais",
+        "text": "como assim"
+      },
+      {
+        "intent": "diga_mais",
+        "text": "e como funciona"
+      },
+      {
+        "intent": "diga_mais",
+        "text": "nao tenho certeza"
+      },
+      {
+        "intent": "tudo_bem",
+        "text": "Tudo bem"
+      },
+      {
+        "intent": "tudo_bem",
+        "text": "Como vocês esta"
+      },
+      {
+        "intent": "tudo_bem",
+        "text": "como vai"
+      },
+      {
+        "intent": "tudo_bem",
+        "text": "joia"
+      },
+      {
+        "intent": "tudo_bem",
+        "text": "joinha"
+      },
+      {
+        "intent": "tudo_bem",
+        "text": "tudo bom"
+      },
+      {
+        "intent": "tudo_bem",
+        "text": "bom dia flor do dia"
+      },
+      {
+        "intent": "tudo_bem",
+        "text": "Tudo bem e você"
+      },
+      {
+        "intent": "tudo_bem",
+        "text": "como vc esta"
+      },
+      {
+        "intent": "tudo_bem",
+        "text": "como vai"
+      },
+      {
+        "intent": "risada",
+        "text": "kkkkkkkkk"
+      },
+      {
+        "intent": "risada",
+        "text": "iuahsuahsuha"
+      },
+      {
+        "intent": "risada",
+        "text": "hehehehehe"
+      },
+      {
+        "intent": "risada",
+        "text": "hahahahahaha"
+      },
+      {
+        "intent": "risada",
+        "text": "chorei de ri"
+      },
+      {
+        "intent": "risada",
+        "text": "ri"
+      },
+      {
+        "intent": "risada",
+        "text": "rachei"
+      },
+      {
+        "intent": "risada",
+        "text": "kkkkk"
+      },
+      {
+        "intent": "negar",
+        "text": "não"
+      },
+      {
+        "intent": "negar",
+        "text": "n"
+      },
+      {
+        "intent": "negar",
+        "text": "nao é isso"
+      },
+      {
+        "intent": "negar",
+        "text": "agora não"
+      },
+      {
+        "intent": "negar",
+        "text": "por enquanto nao"
+      },
+      {
+        "intent": "pedir_contato",
+        "text": "continuar"
+      },
+      {
+        "intent": "pedir_contato",
+        "text": "ok"
+      },
+      {
+        "intent": "pedir_contato",
+        "text": "certo"
+      },
+      {
+        "intent": "pedir_contato",
+        "text": "blz"
+      },
+      {
+        "intent": "comprar",
+        "text": "comprar"
+      },
+      {
+        "intent": "comprar",
+        "text": "quero comprar um imovel"
+      },
+      {
+        "intent": "comprar",
+        "text": "procuro por um imovel"
+      },
+      {
+        "intent": "comprar",
+        "text": "quais imoveis você tem?"
+      },
+      {
+        "intent": "tipo_imovel",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "casa",
+            "entity": "tipo_imovel"
+          }
+        ],
+        "text": "casa"
+      },
+      {
+        "intent": "tipo_imovel",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "apartamento",
+            "entity": "tipo_imovel"
+          }
+        ],
+        "text": "apartamento"
+      },
+      {
+        "intent": "tipo_imovel",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "apartamento",
+            "entity": "tipo_imovel"
+          }
+        ],
+        "text": "apartamento"
+      },
+      {
+        "intent": "tipo_imovel",
+        "entities": [
+          {
+            "start": 20,
+            "end": 24,
+            "value": "casa",
+            "entity": "tipo_imovel"
+          }
+        ],
+        "text": "meu interesse é uma casa"
+      },
+      {
+        "intent": "tipo_imovel",
+        "entities": [
+          {
+            "start": 19,
+            "end": 30,
+            "value": "apartamento",
+            "entity": "tipo_imovel"
+          }
+        ],
+        "text": "meu interesse é um apartamento"
+      },
+      {
+        "intent": "bairro",
+        "entities": [
+          {
+            "start": 10,
+            "end": 16,
+            "value": "centro",
+            "entity": "bairro"
+          }
+        ],
+        "text": "no bairro centro"
+      },
+      {
+        "intent": "bairro",
+        "entities": [
+          {
+            "start": 10,
+            "end": 15,
+            "value": "luzia",
+            "entity": "bairro"
+          }
+        ],
+        "text": "no bairro luzia"
+      },
+      {
+        "intent": "bairro",
+        "entities": [
+          {
+            "start": 3,
+            "end": 10,
+            "value": "lamarão",
+            "entity": "bairro"
+          }
+        ],
+        "text": "no lamarão"
+      },
+      {
+        "intent": "bairro",
+        "entities": [
+          {
+            "start": 3,
+            "end": 12,
+            "value": "rosa else",
+            "entity": "bairro"
+          }
+        ],
+        "text": "no rosa else"
+      },
+      {
+        "intent": "imovel_de_entrada",
+        "entities": [
+          {
+            "start": 14,
+            "end": 18,
+            "value": "casa",
+            "entity": "imovel_de_entrada"
+          }
+        ],
+        "text": "sim tenho uma casa"
+      },
+      {
+        "intent": "imovel_de_entrada",
+        "entities": [
+          {
+            "start": 13,
+            "end": 24,
+            "value": "apartamento",
+            "entity": "imovel_de_entrada"
+          }
+        ],
+        "text": "sim tenho um apartamento"
+      },
+      {
+        "intent": "imovel_de_entrada",
+        "entities": [
+          {
+            "start": 19,
+            "end": 30,
+            "value": "apartamento",
+            "entity": "imovel_de_entrada"
+          }
+        ],
+        "text": "sim quero dar como apartamento"
+      },
+      {
+        "intent": "imovel_de_entrada",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "apartamento",
+            "entity": "imovel_de_entrada"
+          }
+        ],
+        "text": "apartamento"
+      },
+      {
+        "intent": "imovel_de_entrada",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "casa",
+            "entity": "imovel_de_entrada"
+          }
+        ],
+        "text": "casa"
+      },
+      {
+        "intent": "valor_imovel_entrada",
+        "entities": [
+          {
+            "start": 14,
+            "end": 21,
+            "value": "100 mil",
+            "entity": "valor_imovel_entrada"
+          }
+        ],
+        "text": "estou pedindo 100 mil"
+      },
+      {
+        "intent": "valor_imovel_entrada",
+        "entities": [
+          {
+            "start": 8,
+            "end": 14,
+            "value": "80 mil",
+            "entity": "valor_imovel_entrada"
+          }
+        ],
+        "text": "consigo 80 mil"
+      },
+      {
+        "intent": "contato",
+        "entities": [
+          {
+            "start": 15,
+            "end": 23,
+            "value": "99999999",
+            "entity": "contato"
+          }
+        ],
+        "text": "meu telefone é 99999999"
+      },
+      {
+        "intent": "contato",
+        "entities": [
+          {
+            "start": 12,
+            "end": 26,
+            "value": "test@gmail.com",
+            "entity": "contato"
+          }
+        ],
+        "text": "meu email é test@gmail.com"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [],
+    "entity_synonyms": []
+  }
+}
