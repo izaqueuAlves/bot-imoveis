@@ -4972,3 +4972,331 @@ There is no memorised next action
 Predicted next action using policy_0_KerasPolicy
 Predicted next action 'action_listen' with prob 0.98.
 Action 'action_listen' ended with events '[]'
+Rasa process starting
+Restoring parameters from models/nlu/current/intent_classifier_tensorflow_embedding.ckpt
+Available web server routes: 
+static                                             HEAD, OPTIONS, GET             /static/[filename]
+custom_webhook_CmdlineInput.health                 HEAD, OPTIONS, GET             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                POST, OPTIONS                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+Received user message 'oi' with intent '{'name': 'cumprimentar_visitante', 'confidence': 0.9586482048034668}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	bairro: None
+	contato: None
+	imovel_de_entrada: None
+	nome: None
+	tipo_imovel: None
+Current tracker state [{}, {'intent_cumprimentar_visitante': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '13'
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_cumprimentar_visitante' with prob 1.00.
+Action 'utter_cumprimentar_visitante' ended with events '[]'
+Bot utterance 'BotUttered(text: Opa visitante, qual é seu nome?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_cumprimentar_visitante': 1.0, 'prev_action_listen': 1.0}, {'intent_cumprimentar_visitante': 1.0, 'prev_utter_cumprimentar_visitante': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'meu nome é izaqueu' with intent '{'name': 'cumprimentar', 'confidence': 0.9308158159255981}' and entities '[{'start': 11, 'end': 18, 'value': 'izaqueu', 'entity': 'nome', 'confidence': 0.9368837171564454, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 7 events
+Current slot values: 
+	bairro: None
+	contato: None
+	imovel_de_entrada: None
+	nome: izaqueu
+	tipo_imovel: None
+Current tracker state [{'intent_cumprimentar_visitante': 1.0, 'prev_utter_cumprimentar_visitante': 1.0}, {'entity_nome': 1.0, 'slot_nome_0': 1.0, 'prev_action_listen': 1.0, 'intent_cumprimentar': 1.0}]
+There is a memorised next action '12'
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_cumprimentar' with prob 1.00.
+Action 'utter_cumprimentar' ended with events '[]'
+Bot utterance 'BotUttered(text: Olá izaqueu, sou um assistente virtual e irei te auxiliar na compra/venda do seu imóvel.
+ Como posso te ajudar?
+, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'entity_nome': 1.0, 'slot_nome_0': 1.0, 'prev_action_listen': 1.0, 'intent_cumprimentar': 1.0}, {'entity_nome': 1.0, 'slot_nome_0': 1.0, 'intent_cumprimentar': 1.0, 'prev_utter_cumprimentar': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'procuro um imovel' with intent '{'name': 'comprar', 'confidence': 0.9515225887298584}' and entities '[]'
+Logged UserUtterance - tracker now has 11 events
+Current slot values: 
+	bairro: None
+	contato: None
+	imovel_de_entrada: None
+	nome: izaqueu
+	tipo_imovel: None
+Current tracker state [{'entity_nome': 1.0, 'slot_nome_0': 1.0, 'intent_cumprimentar': 1.0, 'prev_utter_cumprimentar': 1.0}, {'slot_nome_0': 1.0, 'prev_action_listen': 1.0, 'intent_comprar': 1.0}]
+There is a memorised next action '18'
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_comprar' with prob 1.00.
+Action 'utter_comprar' ended with events '[]'
+Bot utterance 'BotUttered(text: Certo, para isso me responda, qual tipo de imóvel vc deseja, casa ou apartamento?
+, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'slot_nome_0': 1.0, 'prev_action_listen': 1.0, 'intent_comprar': 1.0}, {'slot_nome_0': 1.0, 'prev_utter_comprar': 1.0, 'intent_comprar': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'casa' with intent '{'name': 'tipo_imovel', 'confidence': 0.7022877335548401}' and entities '[{'start': 0, 'end': 4, 'value': 'casa', 'entity': 'tipo_imovel', 'confidence': 0.501411349901997, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 16 events
+Current slot values: 
+	bairro: None
+	contato: None
+	imovel_de_entrada: None
+	nome: izaqueu
+	tipo_imovel: casa
+Current tracker state [{'slot_nome_0': 1.0, 'prev_utter_comprar': 1.0, 'intent_comprar': 1.0}, {'slot_nome_0': 1.0, 'prev_action_listen': 1.0, 'slot_tipo_imovel_0': 1.0, 'entity_tipo_imovel': 1.0, 'intent_tipo_imovel': 1.0}]
+There is a memorised next action '19'
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'utter_tipo_imovel' with prob 1.00.
+Action 'utter_tipo_imovel' ended with events '[]'
+Bot utterance 'BotUttered(text: Em qual bairro?, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'slot_nome_0': 1.0, 'prev_action_listen': 1.0, 'slot_tipo_imovel_0': 1.0, 'entity_tipo_imovel': 1.0, 'intent_tipo_imovel': 1.0}, {'slot_nome_0': 1.0, 'slot_tipo_imovel_0': 1.0, 'prev_utter_tipo_imovel': 1.0, 'entity_tipo_imovel': 1.0, 'intent_tipo_imovel': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_2_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'no bairro luzia' with intent '{'name': 'bairro', 'confidence': 0.9711862802505493}' and entities '[{'start': 10, 'end': 15, 'value': 'luzia', 'entity': 'bairro', 'confidence': 0.7572465268620816, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 21 events
+Current slot values: 
+	bairro: luzia
+	contato: None
+	imovel_de_entrada: None
+	nome: izaqueu
+	tipo_imovel: casa
+Current tracker state [{'slot_nome_0': 1.0, 'slot_tipo_imovel_0': 1.0, 'prev_utter_tipo_imovel': 1.0, 'entity_tipo_imovel': 1.0, 'intent_tipo_imovel': 1.0}, {'intent_bairro': 1.0, 'slot_nome_0': 1.0, 'prev_action_listen': 1.0, 'slot_tipo_imovel_0': 1.0, 'entity_bairro': 1.0, 'slot_bairro_0': 1.0}]
+There is no memorised next action
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_bairro' with prob 0.98.
+Action 'utter_bairro' ended with events '[]'
+Bot utterance 'BotUttered(text: Hunmm.. vou verificar, por favor aguarde.
+, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_bairro': 1.0, 'slot_nome_0': 1.0, 'prev_action_listen': 1.0, 'slot_tipo_imovel_0': 1.0, 'entity_bairro': 1.0, 'slot_bairro_0': 1.0}, {'prev_utter_bairro': 1.0, 'intent_bairro': 1.0, 'slot_nome_0': 1.0, 'slot_tipo_imovel_0': 1.0, 'entity_bairro': 1.0, 'slot_bairro_0': 1.0}]
+There is no memorised next action
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_continuar_conversa' with prob 0.92.
+Action 'utter_continuar_conversa' ended with events '[]'
+Bot utterance 'BotUttered(text: Você tem um imóvel que gostaria de dar como entrada?
+, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'prev_utter_bairro': 1.0, 'intent_bairro': 1.0, 'slot_nome_0': 1.0, 'slot_tipo_imovel_0': 1.0, 'entity_bairro': 1.0, 'slot_bairro_0': 1.0}, {'intent_bairro': 1.0, 'slot_nome_0': 1.0, 'prev_utter_continuar_conversa': 1.0, 'slot_tipo_imovel_0': 1.0, 'entity_bairro': 1.0, 'slot_bairro_0': 1.0}]
+There is no memorised next action
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 0.97.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'sim tenho tenho uma casa' with intent '{'name': 'imovel_de_entrada', 'confidence': 0.9111695885658264}' and entities '[{'start': 20, 'end': 24, 'value': 'casa', 'entity': 'imovel_de_entrada', 'confidence': 0.6685036470264873, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 28 events
+Current slot values: 
+	bairro: luzia
+	contato: None
+	imovel_de_entrada: casa
+	nome: izaqueu
+	tipo_imovel: casa
+Current tracker state [{'intent_bairro': 1.0, 'slot_nome_0': 1.0, 'prev_utter_continuar_conversa': 1.0, 'slot_tipo_imovel_0': 1.0, 'entity_bairro': 1.0, 'slot_bairro_0': 1.0}, {'slot_nome_0': 1.0, 'intent_imovel_de_entrada': 1.0, 'prev_action_listen': 1.0, 'slot_tipo_imovel_0': 1.0, 'slot_imovel_de_entrada_0': 1.0, 'slot_bairro_0': 1.0, 'entity_imovel_de_entrada': 1.0}]
+There is no memorised next action
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_imovel_de_entrada' with prob 0.97.
+Action 'utter_imovel_de_entrada' ended with events '[]'
+Bot utterance 'BotUttered(text: OK, Qual o valor do imovel?
+, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'slot_nome_0': 1.0, 'intent_imovel_de_entrada': 1.0, 'prev_action_listen': 1.0, 'slot_tipo_imovel_0': 1.0, 'slot_imovel_de_entrada_0': 1.0, 'slot_bairro_0': 1.0, 'entity_imovel_de_entrada': 1.0}, {'slot_nome_0': 1.0, 'intent_imovel_de_entrada': 1.0, 'prev_utter_imovel_de_entrada': 1.0, 'slot_tipo_imovel_0': 1.0, 'slot_imovel_de_entrada_0': 1.0, 'slot_bairro_0': 1.0, 'entity_imovel_de_entrada': 1.0}]
+There is no memorised next action
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message '80 mil' with intent '{'name': 'valor_imovel_entrada', 'confidence': 0.9637703895568848}' and entities '[{'start': 0, 'end': 6, 'value': '80 mil', 'entity': 'valor_imovel_entrada', 'confidence': 0.9230340554183069, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 32 events
+Current slot values: 
+	bairro: luzia
+	contato: None
+	imovel_de_entrada: casa
+	nome: izaqueu
+	tipo_imovel: casa
+Current tracker state [{'slot_nome_0': 1.0, 'intent_imovel_de_entrada': 1.0, 'prev_utter_imovel_de_entrada': 1.0, 'slot_tipo_imovel_0': 1.0, 'slot_imovel_de_entrada_0': 1.0, 'slot_bairro_0': 1.0, 'entity_imovel_de_entrada': 1.0}, {'slot_nome_0': 1.0, 'prev_action_listen': 1.0, 'slot_tipo_imovel_0': 1.0, 'intent_valor_imovel_entrada': 1.0, 'entity_valor_imovel_entrada': 1.0, 'slot_imovel_de_entrada_0': 1.0, 'slot_bairro_0': 1.0}]
+There is no memorised next action
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_valor_imovel_entrada' with prob 0.95.
+Action 'utter_valor_imovel_entrada' ended with events '[]'
+Bot utterance 'BotUttered(text: Certo, posso pegá-lo como entrada pode ser? 
+, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'slot_nome_0': 1.0, 'prev_action_listen': 1.0, 'slot_tipo_imovel_0': 1.0, 'intent_valor_imovel_entrada': 1.0, 'entity_valor_imovel_entrada': 1.0, 'slot_imovel_de_entrada_0': 1.0, 'slot_bairro_0': 1.0}, {'slot_nome_0': 1.0, 'prev_utter_valor_imovel_entrada': 1.0, 'slot_tipo_imovel_0': 1.0, 'intent_valor_imovel_entrada': 1.0, 'entity_valor_imovel_entrada': 1.0, 'slot_imovel_de_entrada_0': 1.0, 'slot_bairro_0': 1.0}]
+There is no memorised next action
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'certo' with intent '{'name': 'pedir_contato', 'confidence': 0.9463359713554382}' and entities '[]'
+Logged UserUtterance - tracker now has 36 events
+Current slot values: 
+	bairro: luzia
+	contato: None
+	imovel_de_entrada: casa
+	nome: izaqueu
+	tipo_imovel: casa
+Current tracker state [{'slot_nome_0': 1.0, 'prev_utter_valor_imovel_entrada': 1.0, 'slot_tipo_imovel_0': 1.0, 'intent_valor_imovel_entrada': 1.0, 'entity_valor_imovel_entrada': 1.0, 'slot_imovel_de_entrada_0': 1.0, 'slot_bairro_0': 1.0}, {'slot_nome_0': 1.0, 'prev_action_listen': 1.0, 'slot_tipo_imovel_0': 1.0, 'slot_imovel_de_entrada_0': 1.0, 'intent_pedir_contato': 1.0, 'slot_bairro_0': 1.0}]
+There is no memorised next action
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_pedir_contato' with prob 0.93.
+Action 'utter_pedir_contato' ended with events '[]'
+Bot utterance 'BotUttered(text: Peço que deixe seu número de telefone ou email que entraremos em contato quando houver alguma atualização:).
+, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'slot_nome_0': 1.0, 'prev_action_listen': 1.0, 'slot_tipo_imovel_0': 1.0, 'slot_imovel_de_entrada_0': 1.0, 'intent_pedir_contato': 1.0, 'slot_bairro_0': 1.0}, {'slot_nome_0': 1.0, 'slot_tipo_imovel_0': 1.0, 'prev_utter_pedir_contato': 1.0, 'slot_imovel_de_entrada_0': 1.0, 'intent_pedir_contato': 1.0, 'slot_bairro_0': 1.0}]
+There is no memorised next action
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 0.96.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'action' with intent '{'name': 'action_test', 'confidence': 0.9347165822982788}' and entities '[]'
+Logged UserUtterance - tracker now has 40 events
+Current slot values: 
+	bairro: luzia
+	contato: None
+	imovel_de_entrada: casa
+	nome: izaqueu
+	tipo_imovel: casa
+Current tracker state [{'slot_nome_0': 1.0, 'slot_tipo_imovel_0': 1.0, 'prev_utter_pedir_contato': 1.0, 'slot_imovel_de_entrada_0': 1.0, 'intent_pedir_contato': 1.0, 'slot_bairro_0': 1.0}, {'intent_action_test': 1.0, 'slot_nome_0': 1.0, 'prev_action_listen': 1.0, 'slot_tipo_imovel_0': 1.0, 'slot_imovel_de_entrada_0': 1.0, 'slot_bairro_0': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: Hummmm... Não sei se entendi. Pode escrever de outra forma?
+, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'slot_nome_0': 1.0, 'prev_action_listen': 1.0, 'slot_tipo_imovel_0': 1.0, 'slot_imovel_de_entrada_0': 1.0, 'intent_pedir_contato': 1.0, 'slot_bairro_0': 1.0}, {'slot_nome_0': 1.0, 'slot_tipo_imovel_0': 1.0, 'prev_utter_pedir_contato': 1.0, 'slot_imovel_de_entrada_0': 1.0, 'intent_pedir_contato': 1.0, 'slot_bairro_0': 1.0}]
+There is no memorised next action
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 0.96.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'meu numero é 99999999' with intent '{'name': 'contato', 'confidence': 0.8822807669639587}' and entities '[{'start': 13, 'end': 21, 'value': '99999999', 'entity': 'contato', 'confidence': 0.7988379658165184, 'extractor': 'ner_crf'}]'
+Logged UserUtterance - tracker now has 46 events
+Current slot values: 
+	bairro: luzia
+	contato: 99999999
+	imovel_de_entrada: casa
+	nome: izaqueu
+	tipo_imovel: casa
+Current tracker state [{'slot_nome_0': 1.0, 'slot_tipo_imovel_0': 1.0, 'prev_utter_pedir_contato': 1.0, 'slot_imovel_de_entrada_0': 1.0, 'intent_pedir_contato': 1.0, 'slot_bairro_0': 1.0}, {'entity_contato': 1.0, 'slot_nome_0': 1.0, 'intent_contato': 1.0, 'prev_action_listen': 1.0, 'slot_contato_0': 1.0, 'slot_tipo_imovel_0': 1.0, 'slot_imovel_de_entrada_0': 1.0, 'slot_bairro_0': 1.0}]
+There is no memorised next action
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_contato' with prob 0.92.
+Action 'utter_contato' ended with events '[]'
+Bot utterance 'BotUttered(text: Ótimo, um dos nossos corretores vai entrar em contato com você em breve., data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'entity_contato': 1.0, 'slot_nome_0': 1.0, 'intent_contato': 1.0, 'prev_action_listen': 1.0, 'slot_contato_0': 1.0, 'slot_tipo_imovel_0': 1.0, 'slot_imovel_de_entrada_0': 1.0, 'slot_bairro_0': 1.0}, {'entity_contato': 1.0, 'slot_nome_0': 1.0, 'intent_contato': 1.0, 'slot_contato_0': 1.0, 'slot_tipo_imovel_0': 1.0, 'slot_imovel_de_entrada_0': 1.0, 'prev_utter_contato': 1.0, 'slot_bairro_0': 1.0}]
+There is no memorised next action
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'utter_despedir' with prob 0.84.
+Action 'utter_despedir' ended with events '[]'
+Bot utterance 'BotUttered(text: Foi um prazer te ajudar!Sempre que precisar, volte aqui! Até a próxima!
+, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'entity_contato': 1.0, 'slot_nome_0': 1.0, 'intent_contato': 1.0, 'slot_contato_0': 1.0, 'slot_tipo_imovel_0': 1.0, 'slot_imovel_de_entrada_0': 1.0, 'prev_utter_contato': 1.0, 'slot_bairro_0': 1.0}, {'entity_contato': 1.0, 'slot_nome_0': 1.0, 'intent_contato': 1.0, 'slot_contato_0': 1.0, 'slot_tipo_imovel_0': 1.0, 'prev_utter_despedir': 1.0, 'slot_imovel_de_entrada_0': 1.0, 'slot_bairro_0': 1.0}]
+There is no memorised next action
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 0.96.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'action' with intent '{'name': 'action_test', 'confidence': 0.9347165822982788}' and entities '[]'
+Logged UserUtterance - tracker now has 52 events
+Current slot values: 
+	bairro: luzia
+	contato: 99999999
+	imovel_de_entrada: casa
+	nome: izaqueu
+	tipo_imovel: casa
+Current tracker state [{'entity_contato': 1.0, 'slot_nome_0': 1.0, 'intent_contato': 1.0, 'slot_contato_0': 1.0, 'slot_tipo_imovel_0': 1.0, 'prev_utter_despedir': 1.0, 'slot_imovel_de_entrada_0': 1.0, 'slot_bairro_0': 1.0}, {'intent_action_test': 1.0, 'slot_nome_0': 1.0, 'prev_action_listen': 1.0, 'slot_contato_0': 1.0, 'slot_tipo_imovel_0': 1.0, 'slot_imovel_de_entrada_0': 1.0, 'slot_bairro_0': 1.0}]
+There is no memorised next action
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_test' with prob 0.82.
+Calling action endpoint to run action 'action_test'.
+Action 'action_test' ended with events '[]'
+Bot utterance 'BotUttered(text:  Dados pegos na conversa: user procura imovel do tipo 'casa' no bairro 'luzia' e forneceu '99999999' como contato, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_action_test': 1.0, 'slot_nome_0': 1.0, 'prev_action_listen': 1.0, 'slot_contato_0': 1.0, 'slot_tipo_imovel_0': 1.0, 'slot_imovel_de_entrada_0': 1.0, 'slot_bairro_0': 1.0}, {'intent_action_test': 1.0, 'slot_nome_0': 1.0, 'slot_contato_0': 1.0, 'slot_tipo_imovel_0': 1.0, 'prev_action_test': 1.0, 'slot_imovel_de_entrada_0': 1.0, 'slot_bairro_0': 1.0}]
+There is no memorised next action
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 0.99.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message ';stop' with intent '{'name': None, 'confidence': 0.0}' and entities '[]'
+Logged UserUtterance - tracker now has 56 events
+Current slot values: 
+	bairro: luzia
+	contato: 99999999
+	imovel_de_entrada: casa
+	nome: izaqueu
+	tipo_imovel: casa
+NLU confidence 0.0 is lower than NLU threshold 0.6. 
+Current tracker state [{'intent_action_test': 1.0, 'slot_nome_0': 1.0, 'slot_contato_0': 1.0, 'slot_tipo_imovel_0': 1.0, 'prev_action_test': 1.0, 'slot_imovel_de_entrada_0': 1.0, 'slot_bairro_0': 1.0}, {'slot_nome_0': 1.0, 'prev_action_listen': 1.0, 'slot_contato_0': 1.0, 'slot_tipo_imovel_0': 1.0, 'slot_imovel_de_entrada_0': 1.0, 'slot_bairro_0': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: Vamos tentar mais uma vez? Eu não consegui te entender direito, me pergunta de outro jeito?
+, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Current tracker state [{'intent_action_test': 1.0, 'slot_nome_0': 1.0, 'prev_action_listen': 1.0, 'slot_contato_0': 1.0, 'slot_tipo_imovel_0': 1.0, 'slot_imovel_de_entrada_0': 1.0, 'slot_bairro_0': 1.0}, {'intent_action_test': 1.0, 'slot_nome_0': 1.0, 'slot_contato_0': 1.0, 'slot_tipo_imovel_0': 1.0, 'prev_action_test': 1.0, 'slot_imovel_de_entrada_0': 1.0, 'slot_bairro_0': 1.0}]
+There is no memorised next action
+Predicted next action using policy_0_KerasPolicy
+Predicted next action 'action_listen' with prob 0.99.
+Action 'action_listen' ended with events '[]'
