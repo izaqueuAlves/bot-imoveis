@@ -1,4 +1,7 @@
 slots:
+  nome:
+    type: text
+    
   tipo_imovel:
     type: categorical
     values:
@@ -22,6 +25,7 @@ intents:
 - imovel_de_entrada
 - comprar
 - cumprimentar
+- cumprimentar_visitante
 - out_of_scope
 - tudo_bem
 - despedir
@@ -39,8 +43,10 @@ entities:
 - imovel_de_entrada
 - bairro
 - contato
+- nome
 
 templates:
+  
   utter_contato:
   - text: "Ótimo, um dos nossos corretores vai entrar em contato com você em breve."   
   utter_pedir_contato:
@@ -55,8 +61,10 @@ templates:
   utter_continuar_conversa:
   - text: "Você possui ap/casa e gostaria de dar como entrada?\n"
   - text: "Você tem um imóvel que gostaria de dar como entrada?\n"
+  utter_cumprimentar_visitante:
+  - text: "Opa visitante, qual é seu nome?"
   utter_cumprimentar:
-  - text: "Olá, sou um assistente virtual e irei te auxiliar na compra/venda\
+  - text: "Olá {nome}, sou um assistente virtual e irei te auxiliar na compra/venda\
          \ do seu imóvel.\n Como posso te ajudar?\n"
   utter_default:
   - text: "Desculpe, ainda não sei falar sobre isso ou talvez não consegui entender\
@@ -96,6 +104,7 @@ actions:
 - utter_imovel_de_entrada
 - utter_valor_imovel_entrada
 - utter_cumprimentar
+- utter_cumprimentar_visitante
 - utter_buscar_imovel
 - utter_negar
 - utter_bairro

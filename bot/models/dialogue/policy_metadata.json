@@ -1,7 +1,10 @@
 {
   "action_fingerprints": {
     "action_listen": {
-      "slots": []
+      "slots": [
+        "tipo_imovel",
+        "nome"
+      ]
     },
     "action_test": {
       "slots": []
@@ -55,7 +58,7 @@
     "rasa_core.policies.fallback.FallbackPolicy",
     "rasa_core.policies.memoization.MemoizationPolicy"
   ],
-  "trained_at": "20190710-194544",
+  "trained_at": "20190712-003738",
   "rasa_core": "0.13.1",
   "tensorflow": "1.12.3",
   "sklearn": "0.20.3"

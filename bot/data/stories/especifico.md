@@ -21,12 +21,15 @@
 * contato
    - utter_contato
 
-## historia
-* cumprimentar
+## historia_1
+* cumprimentar_visitante
+    - utter_cumprimentar_visitante
+* cumprimentar{"nome":"paulo"}
     - utter_cumprimentar
 * comprar
     - utter_comprar
-* tipo_imovel
+* tipo_imovel{"tipo_imovel": "casa"}
+    - slot{"tipo_imovel": "casa"}
     - utter_tipo_imovel
 * bairro
     - utter_bairro
@@ -40,8 +43,10 @@
     - utter_contato
     - utter_despedir
 
-## historia_1
-* cumprimentar
+## historia_2
+* cumprimentar_visitante
+    - utter_cumprimentar_visitante
+* cumprimentar{"nome":"paulo"}
     - utter_cumprimentar
 * comprar
     - utter_comprar

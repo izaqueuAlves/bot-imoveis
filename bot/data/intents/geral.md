@@ -16,7 +16,7 @@
 - flw vlw
 - xau
 
-## intent:cumprimentar
+## intent:cumprimentar_visitante
 - oi tudo bem
 - oi como vai voce
 - como vao as coisas
@@ -33,6 +33,7 @@
 - ola
 - opa tudo bem
 - ola boa tarde
+
 
 ## intent:diga_mais
 - como funciona

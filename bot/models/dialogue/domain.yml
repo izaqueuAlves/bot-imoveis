@@ -7,6 +7,7 @@ actions:
 - utter_imovel_de_entrada
 - utter_valor_imovel_entrada
 - utter_cumprimentar
+- utter_cumprimentar_visitante
 - utter_buscar_imovel
 - utter_negar
 - utter_bairro
@@ -26,6 +27,7 @@ entities:
 - imovel_de_entrada
 - bairro
 - contato
+- nome
 forms: []
 intents:
 - tipo_imovel:
@@ -39,6 +41,8 @@ intents:
 - comprar:
     use_entities: true
 - cumprimentar:
+    use_entities: true
+- cumprimentar_visitante:
     use_entities: true
 - out_of_scope:
     use_entities: true
@@ -71,6 +75,10 @@ slots:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.TextSlot
+  nome:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
   tipo_imovel:
     auto_fill: true
     initial_value: null
@@ -93,8 +101,10 @@ templates:
   - text: "Você possui ap/casa e gostaria de dar como entrada?\n"
   - text: "Você tem um imóvel que gostaria de dar como entrada?\n"
   utter_cumprimentar:
-  - text: "Olá, sou um assistente virtual e irei te auxiliar na compra/venda do seu\
-      \ imóvel.\n Como posso te ajudar?\n"
+  - text: "Olá {nome}, sou um assistente virtual e irei te auxiliar na compra/venda\
+      \ do seu imóvel.\n Como posso te ajudar?\n"
+  utter_cumprimentar_visitante:
+  - text: Opa visitante, qual é seu nome?
   utter_default:
   - text: "Desculpe, ainda não sei falar sobre isso ou talvez não consegui entender\
       \ direito\nVocê pode perguntar de novo de outro jeito?\n"

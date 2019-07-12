@@ -78,67 +78,67 @@
         "text": "xau"
       },
       {
-        "intent": "cumprimentar",
+        "intent": "cumprimentar_visitante",
         "text": "oi tudo bem"
       },
       {
-        "intent": "cumprimentar",
+        "intent": "cumprimentar_visitante",
         "text": "oi como vai voce"
       },
       {
-        "intent": "cumprimentar",
+        "intent": "cumprimentar_visitante",
         "text": "como vao as coisas"
       },
       {
-        "intent": "cumprimentar",
+        "intent": "cumprimentar_visitante",
         "text": "com licenca"
       },
       {
-        "intent": "cumprimentar",
+        "intent": "cumprimentar_visitante",
         "text": "posso falar com voce"
       },
       {
-        "intent": "cumprimentar",
+        "intent": "cumprimentar_visitante",
         "text": "pode me tirar uma duvida"
       },
       {
-        "intent": "cumprimentar",
+        "intent": "cumprimentar_visitante",
         "text": "gostaria de tirar uma duvida"
       },
       {
-        "intent": "cumprimentar",
+        "intent": "cumprimentar_visitante",
         "text": "bom dia"
       },
       {
-        "intent": "cumprimentar",
+        "intent": "cumprimentar_visitante",
         "text": "boa tarde"
       },
       {
-        "intent": "cumprimentar",
+        "intent": "cumprimentar_visitante",
         "text": "boa noite"
       },
       {
-        "intent": "cumprimentar",
+        "intent": "cumprimentar_visitante",
         "text": "olá"
       },
       {
-        "intent": "cumprimentar",
+        "intent": "cumprimentar_visitante",
         "text": "oie"
       },
       {
-        "intent": "cumprimentar",
+        "intent": "cumprimentar_visitante",
         "text": "oi"
       },
       {
-        "intent": "cumprimentar",
+        "intent": "cumprimentar_visitante",
         "text": "ola"
       },
       {
-        "intent": "cumprimentar",
+        "intent": "cumprimentar_visitante",
         "text": "opa tudo bem"
       },
       {
-        "intent": "cumprimentar",
+        "intent": "cumprimentar_visitante",
         "text": "ola boa tarde"
       },
       {
@@ -286,8 +286,12 @@
         "text": "blz"
       },
       {
+        "intent": "pedir_contato",
+        "text": "pode ser"
+      },
+      {
         "intent": "comprar",
-        "text": "comprar"
+        "text": "comprar imovel"
       },
       {
         "intent": "comprar",
@@ -300,6 +304,10 @@
       {
         "intent": "comprar",
         "text": "quais imoveis você tem?"
+      },
+      {
+        "intent": "comprar",
+        "text": "trocar imovel"
       },
       {
         "intent": "tipo_imovel",
@@ -437,13 +445,25 @@
         "intent": "imovel_de_entrada",
         "entities": [
           {
-            "start": 19,
-            "end": 30,
+            "start": 8,
+            "end": 12,
+            "value": "casa",
+            "entity": "imovel_de_entrada"
+          }
+        ],
+        "text": "sim uma casa"
+      },
+      {
+        "intent": "imovel_de_entrada",
+        "entities": [
+          {
+            "start": 8,
+            "end": 19,
             "value": "apartamento",
             "entity": "imovel_de_entrada"
           }
         ],
-        "text": "sim quero dar como apartamento"
+        "text": "sim uma apartamento"
       },
       {
         "intent": "imovel_de_entrada",
@@ -485,6 +505,18 @@
         "intent": "valor_imovel_entrada",
         "entities": [
           {
+            "start": 0,
+            "end": 7,
+            "value": "100 mil",
+            "entity": "valor_imovel_entrada"
+          }
+        ],
+        "text": "100 mil"
+      },
+      {
+        "intent": "valor_imovel_entrada",
+        "entities": [
+          {
             "start": 8,
             "end": 14,
             "value": "80 mil",
@@ -492,6 +524,18 @@
           }
         ],
         "text": "consigo 80 mil"
+      },
+      {
+        "intent": "valor_imovel_entrada",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "80 mil",
+            "entity": "valor_imovel_entrada"
+          }
+        ],
+        "text": "80 mil"
       },
       {
         "intent": "contato",
@@ -516,9 +560,98 @@
           }
         ],
         "text": "meu email é test@gmail.com"
+      },
+      {
+        "intent": "cumprimentar",
+        "entities": [
+          {
+            "start": 14,
+            "end": 21,
+            "value": "izaqueu",
+            "entity": "nome"
+          }
+        ],
+        "text": "oi meu nome é izaqueu"
+      },
+      {
+        "intent": "cumprimentar",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "izaqueu",
+            "entity": "nome"
+          }
+        ],
+        "text": "izaqueu"
+      },
+      {
+        "intent": "cumprimentar",
+        "entities": [
+          {
+            "start": 14,
+            "end": 18,
+            "value": "joão",
+            "entity": "nome"
+          }
+        ],
+        "text": "oi meu nome é joão"
+      },
+      {
+        "intent": "cumprimentar",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "joão",
+            "entity": "nome"
+          }
+        ],
+        "text": "joão"
+      },
+      {
+        "intent": "cumprimentar",
+        "entities": [
+          {
+            "start": 11,
+            "end": 16,
+            "value": "pedro",
+            "entity": "nome"
+          }
+        ],
+        "text": "meu nome é pedro"
+      },
+      {
+        "intent": "cumprimentar",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "pedro",
+            "entity": "nome"
+          }
+        ],
+        "text": "pedro"
+      },
+      {
+        "intent": "cumprimentar",
+        "entities": [
+          {
+            "start": 11,
+            "end": 15,
+            "value": "dado",
+            "entity": "nome"
+          }
+        ],
+        "text": "meu nome é dado"
       }
     ],
-    "regex_features": [],
+    "regex_features": [
+      {
+        "name": "nome",
+        "pattern": "[a-z]"
+      }
+    ],
     "lookup_tables": [],
     "entity_synonyms": []
   }

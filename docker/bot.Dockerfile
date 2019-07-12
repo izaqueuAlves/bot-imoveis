@@ -4,6 +4,10 @@ run apt update && apt install -y git gcc make curl
 
 run python -m pip install --upgrade pip
 
+run pip install spacy
+
+run spacy download pt_core_news_sm
+
 add ./bot.requirements.txt /tmp
 
 run pip install --upgrade pip && pip install -r /tmp/bot.requirements.txt
