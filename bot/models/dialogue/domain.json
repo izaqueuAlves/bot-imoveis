@@ -22,10 +22,6 @@
     "entity_bairro",
     "entity_contato",
     "entity_nome",
-    "slot_bairro_0",
-    "slot_contato_0",
-    "slot_imovel_de_entrada_0",
-    "slot_nome_0",
     "slot_tipo_imovel_0",
     "slot_tipo_imovel_1",
     "prev_action_listen",
@@ -52,6 +48,8 @@
     "prev_utter_continuar_conversa",
     "prev_utter_pedir_contato",
     "prev_utter_contato",
-    "prev_action_test"
+    "prev_action_test",
+    "prev_usuario_form",
+    "active_form_usuario_form"
   ]
 }

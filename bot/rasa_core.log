@@ -5300,3 +5300,188 @@ There is no memorised next action
 Predicted next action using policy_0_KerasPolicy
 Predicted next action 'action_listen' with prob 0.99.
 Action 'action_listen' ended with events '[]'
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-pt_core_news_sm'.
+Available web server routes: 
+static                                             OPTIONS, GET, HEAD             /static/[filename]
+custom_webhook_CmdlineInput.health                 OPTIONS, GET, HEAD             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                OPTIONS, POST                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+Received user message 'oi' with intent '{'name': 'cumprimentar_visitante', 'confidence': 0.3529129153491529}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	bairro: None
+	contato: None
+	imovel_de_entrada: None
+	nome: None
+	requested_slot: None
+	tipo_imovel: None
+NLU confidence 0.3529129153491529 is lower than NLU threshold 0.6. 
+Current tracker state [{}, {'intent_cumprimentar_visitante': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '13'
+Current tracker state [None, None, None, {}, {'intent_cumprimentar_visitante': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '13'
+There is no active form
+Predicted next action using policy_1_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: Vamos tentar mais uma vez? Eu não consegui te entender direito, me pergunta de outro jeito?
+, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'ola' with intent '{'name': 'cumprimentar_visitante', 'confidence': 0.30661658406492226}' and entities '[]'
+Logged UserUtterance - tracker now has 7 events
+Current slot values: 
+	bairro: None
+	contato: None
+	imovel_de_entrada: None
+	nome: None
+	requested_slot: None
+	tipo_imovel: None
+NLU confidence 0.30661658406492226 is lower than NLU threshold 0.6. 
+Current tracker state [{}, {'intent_cumprimentar_visitante': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '13'
+Current tracker state [None, None, None, {}, {'intent_cumprimentar_visitante': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '13'
+There is no active form
+Predicted next action using policy_1_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: Acho que não te entendi, você pode me perguntar de novo usando outras palavras?
+, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'procuro um imovel' with intent '{'name': 'comprar', 'confidence': 0.18218684174986416}' and entities '[]'
+Logged UserUtterance - tracker now has 12 events
+Current slot values: 
+	bairro: None
+	contato: None
+	imovel_de_entrada: None
+	nome: None
+	requested_slot: None
+	tipo_imovel: None
+NLU confidence 0.18218684174986416 is lower than NLU threshold 0.6. 
+Current tracker state [{}, {'intent_comprar': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '18'
+NLU confidence 0.18218684174986416 is lower than NLU threshold 0.3. 
+Current tracker state [None, None, None, {}, {'intent_comprar': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '18'
+There is no active form
+Predicted next action using policy_1_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: Vamos tentar mais uma vez? Eu não consegui te entender direito, me pergunta de outro jeito?
+, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-pt_core_news_sm'.
+Available web server routes: 
+static                                             GET, HEAD, OPTIONS             /static/[filename]
+custom_webhook_CmdlineInput.health                 GET, HEAD, OPTIONS             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                OPTIONS, POST                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+Received user message 'oi' with intent '{'name': 'cumprimentar_visitante', 'confidence': 0.3529129153491529}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	bairro: None
+	contato: None
+	imovel_de_entrada: None
+	nome: None
+	requested_slot: None
+	tipo_imovel: None
+NLU confidence 0.3529129153491529 is lower than NLU threshold 0.6. 
+Current tracker state [{}, {'intent_cumprimentar_visitante': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '13'
+Current tracker state [None, None, None, {}, {'intent_cumprimentar_visitante': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '13'
+There is no active form
+Predicted next action using policy_1_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: Desculpe, ainda não sei falar sobre isso ou talvez não consegui entender direito
+Você pode perguntar de novo de outro jeito?
+, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Recreating tracker for id 'default'
+Received user message 'ola' with intent '{'name': 'cumprimentar_visitante', 'confidence': 0.30661658406492226}' and entities '[]'
+Logged UserUtterance - tracker now has 7 events
+Current slot values: 
+	bairro: None
+	contato: None
+	imovel_de_entrada: None
+	nome: None
+	requested_slot: None
+	tipo_imovel: None
+NLU confidence 0.30661658406492226 is lower than NLU threshold 0.6. 
+Current tracker state [{}, {'intent_cumprimentar_visitante': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '13'
+Current tracker state [None, None, None, {}, {'intent_cumprimentar_visitante': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '13'
+There is no active form
+Predicted next action using policy_1_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: Hummmm... Não sei se entendi. Pode escrever de outra forma?
+, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Rasa process starting
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-pt_core_news_sm'.
+Available web server routes: 
+static                                             HEAD, OPTIONS, GET             /static/[filename]
+custom_webhook_CmdlineInput.health                 HEAD, OPTIONS, GET             /webhooks/rest/
+custom_webhook_CmdlineInput.receive                POST, OPTIONS                  /webhooks/rest/webhook
+Rasa Core server is up and running on http://localhost:5005
+Creating a new tracker for id 'default'.
+Received user message 'oi' with intent '{'name': 'cumprimentar_visitante', 'confidence': 0.3529129153491529}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	bairro: None
+	contato: None
+	imovel_de_entrada: None
+	nome: None
+	requested_slot: None
+	tipo_imovel: None
+NLU confidence 0.3529129153491529 is lower than NLU threshold 0.6. 
+Current tracker state [{}, {'intent_cumprimentar_visitante': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '13'
+Current tracker state [None, None, None, {}, {'intent_cumprimentar_visitante': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '13'
+There is no active form
+Predicted next action using policy_1_FallbackPolicy
+Predicted next action 'action_default_fallback' with prob 1.00.
+Action 'action_default_fallback' ended with events '['UserUtteranceReverted()']'
+Bot utterance 'BotUttered(text: Vamos tentar mais uma vez? Eu não consegui te entender direito, me pergunta de outro jeito?
+, data: {
+  "elements": null,
+  "buttons": null,
+  "attachment": null
+})'
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'

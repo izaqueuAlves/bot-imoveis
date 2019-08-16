@@ -1,6 +1,6 @@
 slots:
   nome:
-    type: text
+    type: unfeaturized
     
   tipo_imovel:
     type: categorical
@@ -9,13 +9,16 @@ slots:
         - apartamento
 
   imovel_de_entrada:
-    type: text
+    type: unfeaturized
     
   bairro:
-    type: text
+    type: unfeaturized
   
   contato:      
-    type: text
+    type: unfeaturized
+
+forms:
+  - usuario_form
   
   
 intents:

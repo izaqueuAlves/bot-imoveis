@@ -1,5 +1,9 @@
-from rasa_core_sdk import Action
+# -*- coding: utf-8 -*-
+from typing import Dict, Text, Any, List, Union, Optional
+from rasa_sdk import Action
 from rasa_core_sdk.events import SlotSet
+from rasa_sdk.executor import CollectingDispatcher
+from rasa_sdk.forms import FormAction
 import requests
 import random
 
@@ -21,3 +25,27 @@ class ActionTest(Action):
         except ValueError:
           dispatcher.utter_message(ValueError)
 
+
+class UsuarioForm(FormAction):
+      """Exemplo de um custom form action """
+      
+      def name(self)-> Text:
+            """nome unico """
+            return "usuario_form"
+         
+
+      # retorna uma lista de slots
+      @staticmethod  
+      def slots_requeridos(tracker: Tracker) -> List[Text]:
+            """uma lista de slots a serem preenchidos """
+            return ["nome", "contato", "bairro"]
+
+      
+      def submit(self):
+            """ define o que será feito quando tods os slots tiverem sido preenchidos"""
+
+            dispatcher.utter_template('utter_', tracker)
+            return []
+
+
+      

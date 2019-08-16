@@ -2,29 +2,34 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
-        "tipo_imovel",
         "nome"
       ]
     },
-    "action_test": {
-      "slots": []
-    },
-    "utter_contato": {
-      "slots": []
-    },
-    "utter_cumprimentar": {
-      "slots": []
-    },
-    "utter_comprar": {
-      "slots": []
-    },
     "utter_imovel_de_entrada": {
+      "slots": []
+    },
+    "utter_tipo_imovel": {
       "slots": []
     },
     "utter_bairro": {
       "slots": []
     },
+    "usuario_form": {
+      "slots": []
+    },
     "utter_despedir": {
+      "slots": []
+    },
+    "utter_valor_imovel_entrada": {
+      "slots": []
+    },
+    "action_test": {
+      "slots": []
+    },
+    "utter_diga_mais": {
+      "slots": []
+    },
+    "utter_default": {
       "slots": []
     },
     "utter_tudo_bem": {
@@ -33,16 +38,13 @@
     "utter_risada": {
       "slots": []
     },
-    "utter_tipo_imovel": {
+    "utter_cumprimentar": {
       "slots": []
     },
-    "utter_valor_imovel_entrada": {
+    "utter_contato": {
       "slots": []
     },
-    "utter_default": {
-      "slots": []
-    },
-    "utter_diga_mais": {
+    "utter_comprar": {
       "slots": []
     }
   },
@@ -50,15 +52,21 @@
   "max_histories": [
     null,
     null,
+    2,
+    null,
+    5,
     2
   ],
   "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
   "policy_names": [
     "rasa_core.policies.keras_policy.KerasPolicy",
     "rasa_core.policies.fallback.FallbackPolicy",
-    "rasa_core.policies.memoization.MemoizationPolicy"
+    "rasa_core.policies.memoization.MemoizationPolicy",
+    "rasa_core.policies.fallback.FallbackPolicy",
+    "rasa_core.policies.memoization.MemoizationPolicy",
+    "rasa_core.policies.form_policy.FormPolicy"
   ],
-  "trained_at": "20190712-014016",
+  "trained_at": "20190717-154450",
   "rasa_core": "0.13.1",
   "tensorflow": "1.12.3",
   "sklearn": "0.20.3"

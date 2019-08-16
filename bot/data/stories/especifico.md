@@ -21,6 +21,33 @@
 * contato
    - utter_contato
 
+
+
+## hist
+* cumprimentar_visitante
+    - utter_cumprimentar_visitante
+* cumprimentar{"nome":"paulo"}
+    - utter_cumprimentar
+* comprar
+    - utter_comprar
+* tipo_imovel
+    - usuario_form
+    - form{"name": "usuario_form"}
+    - form{"name":null}
+* bairro
+    - utter_bairro
+    - utter_continuar_conversa
+* negar
+    - utter_negar
+    - utter_buscar_imovel
+* pedir_contato
+    - utter_pedir_contato
+* contato
+    - utter_contato
+    - utter_despedir
+
+
+
 ## historia_1
 * cumprimentar_visitante
     - utter_cumprimentar_visitante
@@ -43,6 +70,7 @@
     - utter_contato
     - utter_despedir
 
+
 ## historia_2
 * cumprimentar_visitante
     - utter_cumprimentar_visitante
@@ -64,3 +92,6 @@
 * contato
     - utter_contato
     - utter_despedir
+
+
+

@@ -28,7 +28,8 @@ entities:
 - bairro
 - contato
 - nome
-forms: []
+forms:
+- usuario_form
 intents:
 - tipo_imovel:
     use_entities: true
@@ -66,19 +67,23 @@ slots:
   bairro:
     auto_fill: true
     initial_value: null
-    type: rasa_core.slots.TextSlot
+    type: rasa_core.slots.UnfeaturizedSlot
   contato:
     auto_fill: true
     initial_value: null
-    type: rasa_core.slots.TextSlot
+    type: rasa_core.slots.UnfeaturizedSlot
   imovel_de_entrada:
     auto_fill: true
     initial_value: null
-    type: rasa_core.slots.TextSlot
+    type: rasa_core.slots.UnfeaturizedSlot
   nome:
     auto_fill: true
     initial_value: null
-    type: rasa_core.slots.TextSlot
+    type: rasa_core.slots.UnfeaturizedSlot
+  requested_slot:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
   tipo_imovel:
     auto_fill: true
     initial_value: null
