@@ -1,0 +1,18 @@
+[
+  {
+    "text": "casa",
+    "intent": "tipo_imovel",
+    "intent_prediction": {
+      "name": "imovel_de_entrada",
+      "confidence": 0.75764399766922
+    }
+  },
+  {
+    "text": "apartamento",
+    "intent": "imovel_de_entrada",
+    "intent_prediction": {
+      "name": "tipo_imovel",
+      "confidence": 0.8083783388137817
+    }
+  }
+]

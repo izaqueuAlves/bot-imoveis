@@ -1,0 +1,145 @@
+%YAML 1.1
+---
+actions:
+- action_test
+- crud_action
+- utter_comprar
+- utter_confirmar
+- utter_continuar_conversa
+- utter_cumprimentar
+- utter_default
+- utter_despedir
+- utter_gostou_do_imovel
+- utter_outras_duvidas
+- utter_resultado_busca_imoveis
+- utter_valores_slots
+entities:
+- bairro
+- bairro_imovel_de_entrada
+- contato
+- nome
+- possui_imovel_de_entrada
+- tipo_imovel
+- tipo_imovel_de_entrada
+- valor_imovel_de_entrada
+- num_quartos
+forms:
+- usuario_form
+intents:
+- cumprimentar
+- confirmar
+- gostou_do_imovel
+- despedir
+- outras_duvidas
+- comprar:
+    use_entities: []
+- contato
+- nome
+- bairro
+- tipo_imovel
+- continuar_conversa
+- out_of_scope
+- action_test
+- crud_action
+slots:
+  bairro:
+    type: unfeaturized
+  bairro_imovel_de_entrada:
+    type: unfeaturized
+  contato:
+    type: unfeaturized
+  nome:
+    type: unfeaturized
+  possui_imovel_de_entrada:
+    type: unfeaturized
+  requested_slot:
+    type: unfeaturized
+  tipo_imovel:
+    type: unfeaturized
+  tipo_imovel_de_entrada:
+    type: unfeaturized
+  valor_imovel_de_entrada:
+    type: unfeaturized
+  num_quartos:
+    type: unfeaturized  
+templates:
+  utter_ask_nome:
+  - text: Qual é seu nome?
+  - text: Como se chama?
+  - text: Me diga seu nome.
+
+  utter_ask_tipo_imovel:
+  - text: '{nome} qual tipo de imovel você procura, casa ou ap? (casa/apartamento)'
+  - text: '{nome} você procura por uma casa ou apartamento?'
+
+  utter_ask_num_quartos:
+  - text: Com quantos quartos?
+  - text: Qual o número de quartos? 
+
+  utter_ask_bairro:
+  - text: Em qual bairro? Informe apenas o nome do bairro, ex rosa else.
+  - text: 'Favor informe em qual baixo, ex: atalaia.'
+  - text: Em qual bairro seria?
+  
+  utter_ask_contato:
+  - text: Qual seu número de telefone? Não se preocupe, é só para eu ter um meio de
+      falar com você novamente :).
+  - text: Seu número de telefone?
+  - text: Guardei suas preferẽncias, por último me diga seu número de telefone, não
+      se preocupe é só uma maneira de esta não ser nossa última conversa ^_^.
+ 
+  utter_wrong_tipo_imovel:
+  - text: Favor informe o tipo casa ou apartamento.
+  - text: "{nome} basta me informa se é 'casa' ou 'apartamento' :)."
+
+  utter_wrong_num_quartos:
+  - text: Não ententi, Favor informe apenas o número de quartos.
+
+  utter_wrong_bairro:
+  - text: Bairro não encontrado na base de dados. Certifique-se que informou o bairro
+      correto.
+  - text: Desulpa, acho que não consegui encontrar esse bairro, repita para mim, por
+      favor.
+  - text: '{nome} favor informe apenas o nome do bairro.'
+   
+ 
+  
+  utter_comprar:
+  - text: 'Para que eu possa te ajudar preciso que me dê algumas informações, por
+      exemplo:'
+  utter_confirmar:
+  - text: Ótimo, tem algo mais em que posso te ajudar?
+  utter_continuar_conversa:
+  - text: Ótimo, estou fazendo uma busca por {tipo_imovel}s no bairro {bairro}.
+  utter_cumprimentar:
+  - text: Olá, meu nome é Lia, sou uma assistente virtual e irei te auxiliar na compra
+      do seu imóvel. Como posso te ajudar?
+  - text: Olá, meus criadores me chamam de Lia, como uma assistente virtual estou
+      aqui para te ajudar, de alguma forma, a encontrar o imóvel dos seus sonhos...
+      Eu também queria sonhar :(. Enfim, em que posso te ajudar?
+  utter_default:
+  - text: Hummmm... Não sei se entendi. Pode escrever de outra forma?
+  - text: '{nome} não consegui te compreender, peço, por favor, que repita o que disse
+      usando outras palavras, estou ainda caminhando à fluência da linguagem do ser
+      humano :).'
+  utter_despedir:
+  - text: "Foi um prazer te ajudar!empre que tiver alguma dúvida, volte aqui!\n Até\
+      \ logo :)."
+  - text: Tchau, até a próxima :).
+  - text: Bye bye, volte aqui sempre que precisar :).
+  utter_gostou_do_imovel:
+  - text: Você não precisa necessariamente decidir agora, irei passar seu contato
+      para um dos nossos corretores para que ele consiga melhor negociar com você
+      e esclarecer eventuais dúvidas que você tiver. Certo?
+  utter_outras_duvidas:
+  - text: Não se preocupe. O corretor que entrar em contato com você vai tirar todas
+      as dúvidas que você tiver.
+  utter_resultado_busca_imoveis:
+  - text: Então {nome}, gostou de algum desses imóveis?
+  utter_submit:
+  - text: Informações pegas.
+  utter_valores_slots:
+  - text: "Estou com as seguintes informacoes:\n - Seu nome: {nome}\n - O tipo de\
+      \ Imovel procurado: {tipo_imovel}\n - No bairro: {bairro}\n - Forneceu o numero:\
+      \ {contato}"
+ 
