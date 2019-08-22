@@ -1,0 +1,32 @@
+language: pt
+
+pipeline:
+  - name: WhitespaceTokenizer
+  - name: CRFEntityExtractor
+  - name: EntitySynonymMapper
+  - name: CountVectorsFeaturizer
+    token_pattern: (?u)\b\w+\b
+  - name: EmbeddingIntentClassifier
+  - name: DucklingHTTPExtractor
+    url: http://localhost:8000
+    dimensions:
+      - number
+
+policies:
+  - name: KerasPolicy
+    priority: 5
+    epochs: 20
+    batch_size: 10
+    featurizer:
+      - name: FullDialogueTrackerFeaturizer
+        state_featurizer:
+          - name: LabelTokenizerSingleStateFeaturizer
+  - name: FallbackPolicy
+    nlu_threshold: 0.6
+    core_threshold: 0.6
+    priority: 1
+  - name: MemoizationPolicy
+    priority: 2
+    max_history: 2
+  - name: FormPolicy
+  - name: MappingPolicy
